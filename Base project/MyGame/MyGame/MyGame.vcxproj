@@ -96,9 +96,14 @@
     <ClInclude Include="Engine\GameObject.h" />
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="Header1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\ship.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
