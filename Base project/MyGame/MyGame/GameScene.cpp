@@ -1,6 +1,8 @@
 #include "GameScene.h"
-#include"Header.h"
+#include"ship.h"
 
-GameScene::GameScene() {
-
+GameScene::GameScene()
+{
+	ShipPtr ship = std::make_shared<Ship>();
+	addGameObject(ship);
 }
