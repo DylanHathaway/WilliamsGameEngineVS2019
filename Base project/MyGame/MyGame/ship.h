@@ -7,7 +7,7 @@ public:
 	Ship();
 	// Functions overridden from GameObject:
 	void draw();
-	void update(sf::Time& elapsed);
+	void update(sf::Time& elapsed); 
 private:
 	sf::Sprite sprite_;
 };

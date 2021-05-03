@@ -97,7 +97,7 @@
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="ship.h" />
-    <ClInclude Include="Ship.cpp" />
+    <ClCompile Include="Ship.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
