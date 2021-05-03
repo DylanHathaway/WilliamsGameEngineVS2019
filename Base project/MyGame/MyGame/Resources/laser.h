@@ -2,6 +2,7 @@
 
 #include "Engine/GameEngine.h"
 
+<<<<<<< HEAD
 class Laser : public GameObject
 {
 public:
@@ -16,3 +17,6 @@ private:
 };
 
 typedef std::shared_ptr<Laser> LaserPtr;
+=======
+class  Laser : public GameObject
+{

@@ -88,6 +88,7 @@
     <ClCompile Include="Engine\Scene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="meteor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h" />
@@ -96,6 +97,7 @@
     <ClInclude Include="Engine\GameObject.h" />
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="meteor.h" />
     <ClInclude Include="ship.h" />
     <ClCompile Include="Ship.cpp" />
   </ItemGroup>
