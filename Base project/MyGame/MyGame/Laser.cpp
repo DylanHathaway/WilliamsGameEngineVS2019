@@ -14,7 +14,7 @@ Laser::Laser(sf::Vector2f pos)
 }
 
 void Laser::draw()
-{ 
+{
 	GAME.getRenderWindow().draw(sprite_);
 }
 
