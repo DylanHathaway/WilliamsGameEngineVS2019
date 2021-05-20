@@ -10,6 +10,6 @@ public:
 	void update(sf::Time& elapsed); 
 private:
 	sf::Sprite sprite_;
-	int fireTimer
+	int fireTimer_;
 };
 typedef std::shared_ptr<Ship> ShipPtr;

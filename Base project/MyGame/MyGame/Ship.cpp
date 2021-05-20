@@ -44,7 +44,7 @@ void Ship::update(sf::Time & elapsed) {
 		float laserX = x + bounds.width;
 		float laserY = y + (bounds.height / 2.0f);
 
-		LaserPtr laser = std::make_shared<Laser>(sf:Vector2f(laserx, laserY));
+		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
 		GAME.getCurrentScene().addGameObject(laser);
 	}
 
