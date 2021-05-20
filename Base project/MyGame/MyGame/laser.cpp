@@ -1,32 +1,35 @@
-#include"laser.h"
+#include "laser.h"
 
+sf::FloatRect Laser::getCollisionRect()
+{
+	return sprite_.getGlobalBounds();
+}
 const float SPEED = 1.2f;
 
 Laser::Laser(sf::Vector2f pos)
 {
-	Sprite_.setTexture(GAME.getTexture("Resources/laser.png"));
-	Sprite_.setPosition(pos);
-	assignTag("laser");
+	sprite_.setTexture(GAME.getTexture("Resources/laser.png"));
+	sprite_.setPosition(pos);
+	assignTag("Laser");
 }
 
 void Laser::draw()
 {
-	GAME.getRenderWindow().draw(Sprite_);
+	GAME.getRenderWindow().draw(sprite_);
 }
 
-void Laser::update(sf::Time& elapsed) {
+void Laser::update(sf::Time& elapsed)
+{
 	int msElapsed = elapsed.asMilliseconds();
-	sf::Vector2f pos = Sprite_.getPosition();
+	sf::Vector2f pos = sprite_.getPosition();
 
 	if (pos.x > GAME.getRenderWindow().getSize().x)
 	{
 		makeDead();
 	}
-
-
-
-
-
-
+	else
+	{
+		sprite_.setPosition(sf::Vector2f(pos.x + SPEED * msElapsed, pos.y));
+	}
 
 }

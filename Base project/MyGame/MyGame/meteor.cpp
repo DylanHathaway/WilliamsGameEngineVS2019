@@ -28,7 +28,8 @@ void Meteor::draw()
 	GAME.getRenderWindow().draw(sprite_);
 }
 
-void Meteor::update(sf::Time& elapsed) {
+void Meteor::update(sf::Time& elapsed) 
+{
 	int mselapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
 
@@ -40,4 +41,17 @@ void Meteor::update(sf::Time& elapsed) {
 	{
 		sprite_.setPosition(sf::Vector2f(pos.x - SPEED *mselapsed, pos.y));
 	}
+
+	float laserX = x + bounds.width;
+	float laserY = y + (bounds.height / 2.0f);
+
+	LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
+	GAME.getCurrentScene().addGameObject(laser);
+
+	float x = pos.x;
+	float y = pos.y;
+
+	int mselapsed = elapsed.asMilliseconds();
 }
+
+
