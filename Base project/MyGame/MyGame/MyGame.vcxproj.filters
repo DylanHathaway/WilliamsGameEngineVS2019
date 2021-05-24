@@ -20,6 +20,12 @@
     <ClCompile Include="Laser.cpp" />
     <ClCompile Include="explosion.cpp" />
     <ClCompile Include="meteorspawner.cpp" />
+    <ClCompile Include="Score.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverMessage.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -43,6 +49,12 @@
     <ClInclude Include="meteor.h" />
     <ClInclude Include="explosion.h" />
     <ClInclude Include="meteorspawners.h" />
+    <ClInclude Include="score.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverMessage.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
