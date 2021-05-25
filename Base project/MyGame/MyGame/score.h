@@ -1,4 +1,4 @@
-#pragma once50
+#pragma once
 
 #include "Engine/GameEngine.h"
 

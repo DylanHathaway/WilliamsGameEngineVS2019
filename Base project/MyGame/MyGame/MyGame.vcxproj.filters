@@ -26,6 +26,9 @@
     <ClCompile Include="GameOverMessage.cpp">
       <Filter>Resources</Filter>
     </ClCompile>
+    <ClCompile Include="gameoverscene.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -53,6 +56,9 @@
       <Filter>Resources</Filter>
     </ClInclude>
     <ClInclude Include="GameOverMessage.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="gameoverscene.h">
       <Filter>Resources</Filter>
     </ClInclude>
   </ItemGroup>
