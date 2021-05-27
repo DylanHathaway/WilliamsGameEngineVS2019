@@ -6,7 +6,7 @@ class GameOverScene : public Scene
 {
 public:
 
-	GameOverScene
+	GameOverScene(int score);
 
 };
 typedef std::shared_ptr<GameOverScene> GameOverScenePtr;
